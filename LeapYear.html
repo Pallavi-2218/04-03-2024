@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year program</title>
+</head>
+<body>
+    <script>
+        //Write a program to print sum of leap years from 1947 to 2024
+        var sum =0;
+        for(let year=1947;year<=2024;year++)
+        {
+            if(year%4==0 && year%100!=0 || year%400==0)
+            {
+                sum+=year;
+                document.write(year +"<br>")
+            }
+         
+       
+        }
+        document.write(`Sum of leap years from 1947 to 2024 is ${sum}`)  
+    </script>
+</body>
+</html>

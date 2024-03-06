@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        // 7823:- SETT, 4655:-FSFF, 965=NSF decode th epattern and write a JavaScript program to print the code for nuber given by user
+        var number= parseInt(prompt("Enter a number"))
+        result = " "
+        while(number!=0)
+        {
+            rem = number%10;
+            switch(rem)
+            {
+                case 0: result+='Z'
+                    break;
+                case 1: result+='O'
+                    break;
+                case 2: result+='T'
+                    break;
+                case 3: result+='T'
+                    break;
+                case 4: result+='F'
+                    break;
+                case 5: result+='F'
+                    break;
+                case 6: result+='S'
+                    break;
+                case 7: result+='S'
+                    break;
+                case 8: result+='E'
+                    break;
+                case 9: result+='N'
+                    break;
+            }
+            number = parseInt(number/10);
+
+
+        }
+        document.write(result.split('').reverse().join(''));
+
+    </script>
+    
+</body>
+</html>
